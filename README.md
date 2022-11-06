@@ -3,7 +3,7 @@ This repo contains code for all my sql practice attempts on FAANG companies inte
 
 
 ## Table of Contents
-- [Meta - Popularity Percentage](#meta---popularity-percentage)
+- [Meta - Popularity Percentage](https://github.com/Ayo-G/SQL_Practice/tree/main/Meta/Popularity%20Percentage)
 
 
 
