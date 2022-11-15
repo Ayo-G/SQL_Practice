@@ -17,7 +17,9 @@ This repo contains code for all my sql practice attempts on FAANG companies inte
 
 - [Amazon - Highest Cost Orders](https://github.com/Ayo-G/SQL_Practice/tree/main/Amazon/Highest%20Cost%20Orders)
 
+- [Airbnb - Number of Units per Nationality](https://github.com/Ayo-G/SQL_Practice/tree/main/Airbnb/Number%20of%20Units%20per%20Nationality)
 
+- [Airbnb - Ranking Most Active Guests](https://github.com/Ayo-G/SQL_Practice/tree/main/Airbnb/Ranking%20Most%20Active%20Guests)
 
 
 
