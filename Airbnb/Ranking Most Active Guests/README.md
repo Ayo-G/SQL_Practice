@@ -16,7 +16,7 @@ I would then use the order by function to order the results by the rank.
 
 ![image](https://user-images.githubusercontent.com/110608447/201981182-ba52809f-1c76-4650-ac53-52b55190fca5.png)
 
-Below is the output of the query above
+#### Result
 
 ![image](https://user-images.githubusercontent.com/110608447/201981638-dca749a5-3e1f-4260-ae74-d90b682906bf.png)
 <br> <sub> This is just a preview of the result and not the entire result </sub>
