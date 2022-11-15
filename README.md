@@ -15,6 +15,8 @@ This repo contains code for all my sql practice attempts on FAANG companies inte
 
 - [Amazon - Monthly Percentage Difference](https://github.com/Ayo-G/SQL_Practice/tree/main/Amazon/Monthly%20Percentage%20Difference)
 
+- [Amazon - Highest Cost Orders](https://github.com/Ayo-G/SQL_Practice/tree/main/Amazon/Highest%20Cost%20Orders)
+
 
 
 
