@@ -21,6 +21,8 @@ This repo contains code for all my sql practice attempts on FAANG companies inte
 
 - [Airbnb - Ranking Most Active Guests](https://github.com/Ayo-G/SQL_Practice/tree/main/Airbnb/Ranking%20Most%20Active%20Guests)
 
+- [Airbnb - Finding Matching Hosts and Guests](https://github.com/Ayo-G/SQL_Practice/tree/main/Airbnb/Finding%20Matching%20Host%20and%20Guest)
+
 
 
 
