@@ -1,5 +1,5 @@
 # SQL_Practice
-This repo contains code for all my sql practice attempts on the interview questions for Top Companies
+This repo contains code for all my sql practice attempts on interview questions for Top Companies
 
 
 ## Table of Contents
