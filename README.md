@@ -1,5 +1,5 @@
 # SQL_Practice
-This repo contains code for all my sql practice attempts on FAANG companies interview questions
+This repo contains code for all my sql practice attempts on the interview questions for Top Companies
 
 
 ## Table of Contents
