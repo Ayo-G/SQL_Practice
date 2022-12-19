@@ -1,8 +1,5 @@
-``` sql
-
 select 
-    distinct
-    host_id,
+    distinct host_id,
     guest_id
 from
     airbnb_hosts ah
@@ -12,5 +9,3 @@ on
     ah.nationality = ag.nationality
 and
     ah.gender = ag.gender
-
-```
