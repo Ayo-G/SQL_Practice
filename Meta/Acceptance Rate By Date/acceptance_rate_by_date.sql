@@ -33,4 +33,4 @@ ON
 AND  
 	s.user_id_sender = a.user_id_sender
 GROUP BY
-    s.date
+    1
