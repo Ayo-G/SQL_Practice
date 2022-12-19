@@ -1,22 +1,30 @@
-``` sql
-
 With load_p as 
-    (Select 
+(
+	Select 
         user_id,
         date(timestamp) as date,
         MAX(timestamp) as pl
-    from facebook_web_log
-    where action = 'page_load'
-    group by 1, 2),
+    from 
+		facebook_web_log
+    where 
+		action = 'page_load'
+    group by
+		1, 2
+),
 
 exit_p as 
-    (Select
+(
+	Select
         user_id, 
         date(timestamp) as date,
         MIN(timestamp) as pe
-    from facebook_web_log
-    where action = 'page_exit'
-    group by 1, 2)
+    from 
+		facebook_web_log
+    where 
+		action = 'page_exit'
+    group by
+		1, 2
+)
 
 Select 
      load_p.user_id, 
@@ -30,5 +38,3 @@ on
 and 
     load_p.date = exit_p.date
 group by 1;
-
-```

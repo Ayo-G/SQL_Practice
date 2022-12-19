@@ -1,50 +1,50 @@
-``` sql
+ 
+-- Question 1
+-- Select all the clients called Paul in first_name or middle_name and who are more than 25 years old. In the results order them from older to younger
 
-/* 
-Question 1
-Select all the clients called Paul in first_name or middle_name and who are more than 25 years old. In the results order them from older to younger
-*/
 with client_details as
-  (select
+(
+	select
        client_id,
        first_name,
        middle_name,
        last_name,
        date_of_birth,
        date_diff(current_date(), date_of_birth, year) as age
-   from
+	from
        client
-   where
+	where
        (first_name = 'Paul' or middle_name = 'Paul')
-   )
+)
   
 select
     *
 from
     client_details
-WHERE 
+where 
     age > 25
-ORDER BY 
-    age DESC
+order by 
+    age desc
     
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-/* 
-Question 2
-Add a column to the table from question (1) that contains the number of loans each customer made. If there is no loan, this column should show 0.
-*/
+--------------------------------------------------
+
+-- Question 2
+-- Add a column to the table from question (1) that contains the number of loans each customer made. If there is no loan, this column should show 0.
+
 WITH client_details as
-  (SELECT
+(
+	SELECT
        client_id,
        first_name,
        middle_name,
        last_name,
        date_of_birth,
        date_diff(current_date(), date_of_birth, year) as age
-   FROM
+	FROM
        client
-   WHERE
+	WHERE
        (first_name = 'Paul' or middle_name = 'Paul')  
-  )
+)
   
 
 SELECT
@@ -68,11 +68,11 @@ GROUP BY
 ORDER BY 
     age DESC
     
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-/* 
-Question 3
-Select the 100cc, 125cc and 150cc bikes from the vehicle table. Add an engine_size column to the output (that contains the engine size).
-*/
+-------------------------------------------
+
+-- Question 3
+-- Select the 100cc, 125cc and 150cc bikes from the vehicle table. Add an engine_size column to the output (that contains the engine size).
+
 SELECT
     v.*,
     CASE WHEN model_name LIKE '%100%' THEN 100
@@ -88,11 +88,11 @@ OR
 OR 
     model_name LIKE '%100%'
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-/* 
-Question 4
-Calculate the total principal_amount per client full name (one column that includes all the names for each client) and per vehicle make.
-*/
+---------------------------------------------
+
+-- Question 4
+-- Calculate the total principal_amount per client full name (one column that includes all the names for each client) and per vehicle make.
+
 SELECT 
      ARRAY_TO_STRING([first_name, middle_name, last_name], ' ') as fullname,
      make,
@@ -110,12 +110,11 @@ ON
 GROUP BY
      1,2
      
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-/* 
-Question 5
-Select the loan table and add an extra column that shows the chronological loan order for each client based on the submitted_on_date column: 1 if it's the client's first sale, 2 if it's the client's second sale etc. <br>
-Call it loan_order.
-*/
+-------------------------------------------------
+
+-- Question 5
+-- Select the loan table and add an extra column that shows the chronological loan order for each client based on the submitted_on_date column: 1 if it's the client's first sale, 2 if it's the client's second sale etc. Call it loan_order.
+
 SELECT
      l.*,
      rank() over (partition by client_id order by submitted_on_date) as loan_order
@@ -123,4 +122,3 @@ FROM
      loan l
 ORDER BY
      client_id
-```

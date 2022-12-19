@@ -1,21 +1,25 @@
-``` sql
-
 with bull as
-    (select
+(
+	select
         'bull' as text,
         count(contents) as occurence
-    from google_file_store
+    from 
+		google_file_store
     where 
         contents like ' bull %' 
-        or contents like '% bull %'),
+        or contents like '% bull %'
+),
 bear as 
-    (select
+(
+	select
         'bear' as text,
         count(contents) as occurence
-    from google_file_store
+    from 
+		google_file_store
     where 
         contents like ' bear %' 
-        or contents like '% bear %')
+        or contents like '% bear %'
+)
 
 select 
     *
@@ -26,5 +30,3 @@ select
     *
 from
     bear;
-
-```

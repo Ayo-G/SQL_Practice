@@ -1,7 +1,6 @@
-``` sql
-
 with cte as
-    (select 
+(
+	select 
         first_name,
         sum(total_order_cost) as total,
         dense_rank() over(order by sum(total_order_cost) desc) as rank_,
@@ -14,7 +13,8 @@ with cte as
         o.cust_id = c.id
     group by
         first_name,
-        order_date)
+        order_date
+)
 
 select
     first_name,
@@ -26,5 +26,3 @@ where
     rank_ = 1
     and
     order_date between '2019-02-01' and '2019-05-01'
-
-```

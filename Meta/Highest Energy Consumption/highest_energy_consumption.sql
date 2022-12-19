@@ -1,7 +1,6 @@
-``` sql
-
 WITH combined as
-    (SELECT
+(
+	SELECT
         eu.date,
         eu.consumption
     FROM
@@ -21,17 +20,20 @@ WITH combined as
         asi.date,
         asi.consumption
     FROM
-        fb_asia_energy asi),
+        fb_asia_energy asi
+),
 
 RANKED as
-    (SELECT 
+(
+	SELECT 
         date,
         sum(consumption) as tot_energy,
         dense_rank() over(order by sum(consumption) desc) as rank_
     FROM 
         combined
     GROUP BY
-        date)
+        date
+)
 
 SELECT
     date,
@@ -40,5 +42,3 @@ FROM
     ranked
 WHERE
     rank_ = 1;
-
-```

@@ -1,5 +1,3 @@
-``` sql
-
 SELECT 
     DENSE_RANK() OVER(ORDER BY SUM(n_messages) DESC) as rank_,
     id_guest,
@@ -10,5 +8,3 @@ GROUP BY
     id_guest
 ORDER BY
     rank_;
-
-```
