@@ -1,7 +1,7 @@
 WITH sent as
 (
 	SELECT 
-        date,
+       	date,
 		user_id_receiver,
 		user_id_sender
     FROM 
@@ -9,6 +9,7 @@ WITH sent as
     WHERE
         action = 'sent'
 ),
+
 accepted as
 (
 	SELECT
@@ -32,4 +33,4 @@ ON
 AND  
 	s.user_id_sender = a.user_id_sender
 GROUP BY
-    s.date
+    1
