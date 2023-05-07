@@ -27,8 +27,9 @@ This repo contains code for all my sql practice attempts on interview questions 
 
 - [Airbnb - Finding Matching Hosts and Guests](https://github.com/Ayo-G/SQL_Practice/tree/main/Airbnb/Finding%20Matching%20Host%20and%20Guest)
 
-#### Assessment
-- [Assessment](https://github.com/Ayo-G/SQL_Practice/tree/main/Assessment)
+#### Practice
+- [Assessment](https://github.com/Ayo-G/SQL_Practice/tree/main/Assessment/Assessment)
+- [Second Largest Age](https://github.com/Ayo-G/SQL_Practice/tree/main/Assessment/Second%20Largest%20Age)
 
 
 
