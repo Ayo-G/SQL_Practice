@@ -3,14 +3,20 @@ Electricity
 
 ## Table columns
 cid
+
 cname
+
 quantity
+
 price
 
 ## Column properties 
 ***cid:*** ID
+
 ***cname:*** customer name
+
 ***quantity:*** the quantity of electricity used by customer (in kwh)
+
 ***price:*** unit price of electricity (pence/kwh)
 
 The table "Electricity" above describes the electricity consumption of each customer for the month of April, 2022, served by one energy supplier. The property of each column is also provided.
