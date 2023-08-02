@@ -30,8 +30,4 @@ This repo contains code for all my sql practice attempts on interview questions 
 #### Practice
 - [Assessment](https://github.com/Ayo-G/SQL_Practice/tree/main/Practice/Assessment)
 - [Second Largest Age](https://github.com/Ayo-G/SQL_Practice/tree/main/Practice/Second%20Largest%20Age)
-
-
-
-
-
+- [Electricity]()
