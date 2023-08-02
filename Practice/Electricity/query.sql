@@ -1,4 +1,4 @@
-DROP TABLE electricity;
+-- Provide SQL commands that can create the above table successfully in the database and make column "cid" the primary key of the table.
 
 CREATE TABLE electricity
 (
