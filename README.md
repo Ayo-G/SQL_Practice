@@ -12,6 +12,8 @@ This repo contains code for all my sql practice attempts on interview questions 
 
 - [Meta - Acceptance Rate by Date](https://github.com/Ayo-G/SQL_Practice/tree/main/Meta/Acceptance%20Rate%20By%20Date)
 
+- [Meta - Algorithm Performance](https://github.com/Ayo-G/SQL_Practice/tree/main/Meta/Algorithm%20Perfomance)
+
 #### Google
 - [Google - Counting Instances in Text](https://github.com/Ayo-G/SQL_Practice/tree/main/Google/Counting%20Instances%20in%20Text)
 
@@ -29,5 +31,7 @@ This repo contains code for all my sql practice attempts on interview questions 
 
 #### Practice
 - [Assessment](https://github.com/Ayo-G/SQL_Practice/tree/main/Practice/Assessment)
+
 - [Second Largest Age](https://github.com/Ayo-G/SQL_Practice/tree/main/Practice/Second%20Largest%20Age)
+
 - [Electricity](https://github.com/Ayo-G/SQL_Practice/tree/main/Practice/Electricity)
